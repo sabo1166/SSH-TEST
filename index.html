@@ -6,17 +6,38 @@
     <title>DevOps Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
+
         <h1>DevOps Task Manager</h1>
 
-        <input type="text" id="taskInput" placeholder="Enter a task">
-        <button onclick="addTask()">Add Task</button>
+        <!-- Login Feature -->
+        <div class="login">
+            <h2>Login</h2>
 
-        <ul id="taskList"></ul>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+
+            <p id="loginMessage"></p>
+        </div>
+
+        <!-- Task Feature -->
+        <div class="tasks">
+            <h2>Tasks</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </div>
+
     </div>
 
     <script src="app.js"></script>
+
 </body>
-</html>
+</html>>
